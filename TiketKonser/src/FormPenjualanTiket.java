@@ -16,8 +16,8 @@ public class FormPenjualanTiket extends javax.swing.JFrame {
         initComponents();
         
         cbem.addItem("PILIH");
-        cbem.addItem("BLACKPINK");
-        cbem.addItem("COLDPLAY");
+        cbem.addItem("BLANKPUNK");
+        cbem.addItem("COS PLY");
         
         cbkat.addItem("PILIH");
         cbkat.addItem("KATEGORI I");
