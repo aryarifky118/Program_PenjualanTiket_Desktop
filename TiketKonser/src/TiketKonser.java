@@ -139,5 +139,12 @@ public class TiketKonser {
     public double getSub() {
         sub = hrg * jml;
         return (sub);
-    }   
+    }
+
+    public double getPpn() {
+        ppn = sub * 0.10;
+        return (ppn);
+    }
+    
+    
 }

@@ -533,6 +533,7 @@ public class FormPenjualanTiket extends javax.swing.JFrame {
         // TODO add your handling code here:
         tkt.setJml(Integer.parseInt(cbjum.getSelectedItem().toString()));
         tsub.setText(Double.toString(tkt.getSub()));
+        tppn.setText(Double.toString(tkt.getPpn()));
     }//GEN-LAST:event_cbjumActionPerformed
 
     /**
