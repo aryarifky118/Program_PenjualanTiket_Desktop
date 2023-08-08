@@ -215,6 +215,11 @@ public class FormPenjualanTiket extends javax.swing.JFrame {
         });
 
         cbjum.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {}));
+        cbjum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbjumActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -523,6 +528,12 @@ public class FormPenjualanTiket extends javax.swing.JFrame {
         tkt.setSeleksiKat();
         thrg.setText(Double.toString(tkt.getHrg()));
     }//GEN-LAST:event_cbkatActionPerformed
+
+    private void cbjumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbjumActionPerformed
+        // TODO add your handling code here:
+        tkt.setJml(Integer.parseInt(cbjum.getSelectedItem().toString()));
+        tsub.setText(Double.toString(tkt.getSub()));
+    }//GEN-LAST:event_cbjumActionPerformed
 
     /**
      * @param args the command line arguments

@@ -79,13 +79,18 @@ public class TiketKonser {
     public String getKat() {
         return kat;
     }
+
+    public void setJml(int val) {
+        jml = val;
+    }
+    
+    public int getJml() {
+        return jml;
+    }
     
     public double getHrg() {
         return hrg;
     }
-    
-    
-    
     
     public void setSeleksiEm(){
         if(em.equalsIgnoreCase("BLANKPUNK")){
@@ -130,4 +135,9 @@ public class TiketKonser {
             }
         }
     }
+    
+    public double getSub() {
+        sub = hrg * jml;
+        return (sub);
+    }   
 }
