@@ -145,6 +145,11 @@ public class TiketKonser {
         ppn = sub * 0.10;
         return (ppn);
     }
+
+    public double getTot() {
+        tot = sub + ppn;
+        return (tot);
+    }
     
     
 }

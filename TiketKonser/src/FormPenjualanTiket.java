@@ -43,7 +43,11 @@ public class FormPenjualanTiket extends javax.swing.JFrame {
         nt.setText("");
         cbem.setSelectedItem("PILIH");
         cbkat.setSelectedItem("PILIH");
-        cbjum.setSelectedItem("PILIH");
+        cbjum.setSelectedItem("0");
+        thrg.setText("");
+        tsub.setText("");
+        tppn.setText("");
+        ttot.setText("");
         tubyr.setText("");
     }
     
@@ -534,6 +538,7 @@ public class FormPenjualanTiket extends javax.swing.JFrame {
         tkt.setJml(Integer.parseInt(cbjum.getSelectedItem().toString()));
         tsub.setText(Double.toString(tkt.getSub()));
         tppn.setText(Double.toString(tkt.getPpn()));
+        ttot.setText(Double.toString(tkt.getTot()));
     }//GEN-LAST:event_cbjumActionPerformed
 
     /**
