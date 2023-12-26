@@ -10,7 +10,7 @@
 public class TiketKonser {
     public String np, ae, nt, em, tgl, wkt, lks, kat;
     public int jml;
-    public double hrg, sub, ppn, tot, ub;
+    public double hrg, sub, ppn, tot, ub, uk;
 
 
     public void setNp(String val) {
@@ -94,11 +94,11 @@ public class TiketKonser {
     
     public void setSeleksiEm(){
         if(em.equalsIgnoreCase("BLANKPUNK")){
-            tgl = "03 Oktober 2023";
+            tgl = "03 Oktober 2024";
             wkt = "19.00 WIB";
             lks = "SKY STADION";
         }else if(em.equalsIgnoreCase("COS PLY")){
-            tgl = "11 Maret 2024";
+            tgl = "07 Oktober 2024";
             wkt = "17.00 WIB";
             lks = "CENTRAL STADION";
         }else{
@@ -151,5 +151,16 @@ public class TiketKonser {
         return (tot);
     }
     
+    public void setUb(double val) {
+        ub = val;
+    }
     
+    public double getUb() {
+        return ub;
+    }
+    
+    public double getUk() {
+        uk = ub - tot;
+        return(uk);
+    }
 }

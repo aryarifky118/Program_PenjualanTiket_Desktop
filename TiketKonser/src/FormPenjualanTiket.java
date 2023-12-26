@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -76,6 +79,8 @@ public class FormPenjualanTiket extends javax.swing.JFrame {
         tppn.setEnabled(false);
         ttot.setEnabled(false);
         tubyr.setEnabled(false);
+        tukem.setEnabled(false);
+        bcetak.setEnabled(false);
 }
 
     /**
@@ -529,6 +534,14 @@ public class FormPenjualanTiket extends javax.swing.JFrame {
 
     private void bbayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bbayarActionPerformed
         // TODO add your handling code here:
+        tkt.setUb(Double.parseDouble(tubyr.getText()));
+        tukem.setText(Double.toString(tkt.getUk()));
+        if(tkt.getUb() >= tkt.getTot()) {
+            bcetak.setEnabled(true);
+        }else {
+            bcetak.setEnabled(false);
+            JOptionPane.showMessageDialog(null, "Pembayaran Kurang!!", "Warning", JOptionPane.OK_OPTION);
+        }
     }//GEN-LAST:event_bbayarActionPerformed
 
     private void bcetakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bcetakActionPerformed
